@@ -72,7 +72,8 @@ export function Signup() {
                     } else {
                         toast(response.data.mssg)
                     }
-                } catch (error) {
+                } catch (error) { 
+                    console.log(error)
                     toast.error(error.response.data.error)
                 }
             }}>Sign Up</button>

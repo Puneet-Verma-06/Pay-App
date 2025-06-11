@@ -34,7 +34,7 @@ userrouter.post("/signup",validateUser(signupSchema), async(req,res) => {
             return res.json({mssg: "User created successfully",token: token})
         } 
     } catch (error) {
-        return res.json({mssg: "Error while creating user",error})
+        return res.json({success:false,mssg: "Error while creating user",error})
     }
 
 })
